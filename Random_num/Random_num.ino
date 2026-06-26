@@ -1,12 +1,18 @@
 #include<avr/io.h>
 #include<util/delay.h>
 #include<stdlib.h>
+void buzz(void){
+  PORTB = 1<<PB5; 
+  _delay_ms(200);
+  PORTB = 0; 
+}
 int main(void){
  DDRD = 0xff;
  DDRB &= ~(0x01);
 DDRB |= 1<<PB5; 
-PORTB |= 0x21; 
- unsigned char i =1,j = 0, k , display[10] = {0x03,0x9f, 0x25, 0x0d, 0x99, 0x49, 0x41,0x11, 0x01, 0x09};
+PORTB |= 1; 
+PORTD = 0xfd;
+ unsigned char i =1,j = 0, k , display[6] = {0x9f, 0x25, 0x0d, 0x99, 0x49, 0x41};
  while(i != j){
   
   for(i=1; i<255; i++){
@@ -18,13 +24,15 @@ PORTB |= 0x21;
 
     break;}
   
-_delay_ms(50);
+_delay_ms(39);
  }
  
  }
  srand(j);
- k = rand() % 10; 
+ k = rand() % 6; 
+ buzz();
  PORTD = display[k];
 while(1);
 return 0;
 }
+
