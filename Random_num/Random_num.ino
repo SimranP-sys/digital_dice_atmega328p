@@ -1,6 +1,6 @@
 #include<avr/io.h>
 #include<util/delay.h>
-#include<stdlib.h>
+
 void buzz(void){
   PORTB = 1<<PB5; 
   _delay_ms(200);
@@ -12,7 +12,7 @@ int main(void){
 DDRB |= 1<<PB5; 
 PORTB |= 1; 
 PORTD = 0xfd;
- unsigned char i =1,j = 0, k , display[6] = {0x9f, 0x25, 0x0d, 0x99, 0x49, 0x41};
+ unsigned char i =1,j = 0 , display[6] = {0x9f, 0x25, 0x0d, 0x99, 0x49, 0x41};
  while(i != j){
   
   for(i=1; i<255; i++){
@@ -28,10 +28,9 @@ _delay_ms(39);
  }
  
  }
- srand(j);
- k = rand() % 6; 
+ 
  buzz();
- PORTD = display[k];
+ PORTD = display[j % 6];
 while(1);
 return 0;
 }
