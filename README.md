@@ -5,7 +5,8 @@
 The given Random\_num file provides embedded C (bare metal) code for this project.
 The project generates a random number between 0-6 and display it on 7 segment display using atmega328P uC. 
 
-<img width="228" height="400" alt="Circuit" src="https://github.com/user-attachments/assets/94e88742-4da1-494b-bc93-f6cce414f6a2" />
+<img width="400" height="228" alt="Circuit" src="https://github.com/user-attachments/assets/2bea4294-d3be-4632-bc53-afd66f16c6f2" />
+
 
 
 
