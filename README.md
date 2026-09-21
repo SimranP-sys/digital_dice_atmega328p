@@ -61,8 +61,12 @@ The current code uses around 358 or 1% of program memory.
 4. buzzer
 5. push button and resistors.
 
+Circuit diagram : 
+<img width="400" height="227" alt="ckt diagram" src="https://github.com/user-attachments/assets/3d942eb3-700e-4e2d-add9-5d112ea68f2d" />
+
 References 
 Pins: 
 https://docs.arduino.cc/retired/hacking/hardware/PinMapping168/
+
 Random numbers: 
 https://www.w3schools.com/c/c_random_numbers.php
