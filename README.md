@@ -5,6 +5,8 @@
 The given Random\_num file provides embedded C (bare metal) code for this project.
 The project generates a random number between 0-6 and display it on 7 segment display using atmega328P uC. 
 
+<img width="400" height="228" alt="Circuit" src="https://github.com/user-attachments/assets/2bea4294-d3be-4632-bc53-afd66f16c6f2" />
+
 
 
 
@@ -59,3 +61,12 @@ The current code uses around 358 or 1% of program memory.
 4. buzzer
 5. push button and resistors.
 
+Circuit diagram : 
+<img width="400" height="227" alt="ckt diagram" src="https://github.com/user-attachments/assets/3d942eb3-700e-4e2d-add9-5d112ea68f2d" />
+
+References 
+Pins: 
+https://docs.arduino.cc/retired/hacking/hardware/PinMapping168/
+
+Random numbers: 
+https://www.w3schools.com/c/c_random_numbers.php
